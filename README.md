@@ -60,12 +60,16 @@ export ZOTERO_LIBRARY_ID="your_id"        # Optional: Zotero integration
 ### Installation
 
 ```bash
-# Clone into Claude Code skills directory
-git clone https://github.com/<your-username>/arxiv-lens.git ~/.claude/skills
+# Clone the repo somewhere
+git clone https://github.com/julsix17/arxiv-lens.git
 
-# Or symlink if you keep skills elsewhere
-ln -s /path/to/arxiv-lens/* ~/.claude/skills/
+# Symlink each skill into Claude Code skills directory
+for skill in arxiv-lens/paper-search arxiv-lens/deep-analyze-paper arxiv-lens/extract-paper-images arxiv-lens/conf-papers; do
+  ln -s "$(pwd)/$skill" ~/.claude/skills/
+done
 ```
+
+Or manually copy the skill folders you need into `~/.claude/skills/`.
 
 ### Research Interests Config
 
