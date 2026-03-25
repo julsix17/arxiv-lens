@@ -1,5 +1,7 @@
 # arxiv-lens
 
+> Inspired by and built upon [evil-read-arxiv](https://github.com/juliye2025/evil-read-arxiv).
+
 [English](#english) | [中文](#中文)
 
 ---
