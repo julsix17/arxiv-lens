@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.json
+!conf-papers/conf-papers.yaml
+2603.*
+2410.*
+*.output
